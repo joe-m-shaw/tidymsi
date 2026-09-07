@@ -1,10 +1,10 @@
-Package: readmsi
+Package: tidymsi
 Title: Useful functions for microsatellite instability testing
 Version: 0.0.0.9000
 Authors@R: 
     person("Joe M.", "Shaw", , "joseph.shaw2@mft.nhs.uk", role = c("aut", "cre"),
     comment = c(ORCID = "0000-0002-5089-751X"))
-Description: readmsi includes functions for working with MSI output files from CLC (Qiagen) pipelines.
+Description: tidymsi includes functions for working with MSI output files from CLC (Qiagen) pipelines.
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -18,3 +18,4 @@ Imports:
     readxl,
     rlang,
     tidyr
+URL: https://joe-m-shaw.github.io/tidymsi/

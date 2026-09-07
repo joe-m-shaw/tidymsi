@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(readmsi)
+library(tidymsi)
 
-test_check("readmsi")
+test_check("tidymsi")
