@@ -1,0 +1,13 @@
+# Package index
+
+## All functions
+
+- [`join_msi_locus_tables()`](https://joe-m-shaw.github.io/tidymsi/reference/join_msi_locus_tables.md)
+  : Join information in CLC MSI Report locus section
+- [`mutate_msi_row_numbers()`](https://joe-m-shaw.github.io/tidymsi/reference/mutate_msi_row_numbers.md)
+  : Add row numbers to the locus table section of a CLC MSI Report
+- [`read_loci()`](https://joe-m-shaw.github.io/tidymsi/reference/read_loci.md)
+  : Read MSI locus tables from CLC reports in tidy format
+- [`read_msi_locus_section()`](https://joe-m-shaw.github.io/tidymsi/reference/read_msi_locus_section.md)
+  : Read the section of a CLC MSI Report Excel which contains locus
+  lengths
