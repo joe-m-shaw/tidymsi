@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# tidymsi
+# tidymsi <a href="https://joe-m-shaw.github.io/tidymsi/"><img src="man/figures/logo.png" align="right" height="250" alt="tidymsi website" /></a>
 
 <!-- badges: start -->
 
@@ -9,7 +9,8 @@
 coverage](https://codecov.io/gh/joe-m-shaw/tidymsi/graph/badge.svg)](https://app.codecov.io/gh/joe-m-shaw/tidymsi)
 <!-- badges: end -->
 
-tidymsi is a package to make working with CLC MSI outputs easier.
+`tidymsi` is a package which helps to convert microsatellite instability
+(MSI) results into a tidy format for data analysis.
 
 ## Installation
 
