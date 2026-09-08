@@ -40,23 +40,22 @@ each tested locus, however the data structure is difficult to work with.
 
 `read_loci` rearranges the initial format using 3 helper functions.
 
-First, the section of the Excel sheet containing the locus tables is
-read in as a single table using `read_msi_locus_section`.
+- `read_msi_locus_section`: first, the section of the Excel sheet
+  containing the locus tables is read in as a single table.
 
-Next, the numbers of each row are annotated using
-`mutate_msi_row_numbers`.
+- `mutate_msi_row_numbers`: the numbers of each row are annotated.
 
-Finally, the three pieces of information for each marker (the name,
-stability and repeat table) are joined together based on their row
-numbers with `join_msi_locus_tables`: the marker name will be 2 rows
-above the repeat table, and the marker stability will be 1 row above.
+- `join_msi_locus_tables`: the three pieces of information for each
+  marker (the name, stability and repeat table) are joined together
+  based on their row numbers with : the marker name will be 2 rows above
+  the repeat table, and the marker stability will be 1 row above.
 
-@section Output data format:
+## Output data format
 
 This produces a dataframe which includes the information in the repeat
 marker table, with the marker name and stability as additional columns.
 
-@section Usage:
+## Usage
 
 `read-loci` can be combined with `purr::map` and
 [`purrr::list_rbind`](https://purrr.tidyverse.org/reference/list_c.html)

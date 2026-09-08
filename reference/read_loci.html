@@ -72,18 +72,27 @@ marker, which may have different repeat lengths associated with it.</p></li>
 
 
 
-<p><code>read_loci</code> rearranges the initial format using 3 helper functions.</p>
-<p>First, the section of the Excel sheet containing the locus tables is
-read in as a single table using <code>read_msi_locus_section</code>.</p>
-<p>Next, the numbers of each row are annotated using <code>mutate_msi_row_numbers</code>.</p>
-<p>Finally, the three pieces of information for each marker (the name,
+<p><code>read_loci</code> rearranges the initial format using 3 helper functions.</p><ul><li><p><code>read_msi_locus_section</code>: first, the section of the Excel sheet
+containing the locus tables is read in as a single table.</p></li>
+<li><p><code>mutate_msi_row_numbers</code>: the numbers of each row are annotated.</p></li>
+<li><p><code>join_msi_locus_tables</code>: the three pieces of information for each marker (the name,
 stability and repeat table) are joined together based on their row numbers
-with <code>join_msi_locus_tables</code>: the marker name will be 2 rows above the repeat
-table, and the marker stability will be 1 row above.</p>
-<p>@section Output data format:</p>
+with : the marker name will be 2 rows above the repeat
+table, and the marker stability will be 1 row above.</p></li>
+</ul></div>
+    <div class="section level2">
+    <h2 id="output-data-format">Output data format<a class="anchor" aria-label="anchor" href="#output-data-format"></a></h2>
+
+
+
 <p>This produces a dataframe which includes the information in the repeat marker
 table, with the marker name and stability as additional columns.</p>
-<p>@section Usage:</p>
+    </div>
+    <div class="section level2">
+    <h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a></h2>
+
+
+
 <p><code>read-loci</code> can be combined with <code>purr::map</code> and <code><a href="https://purrr.tidyverse.org/reference/list_c.html" class="external-link">purrr::list_rbind</a></code> to
 combine marker tables from multiple CLC MSI reports.</p>
     </div>
