@@ -1,6 +1,6 @@
 test_that("join_msi_locus_tables works", {
 
-  locus_section <- read_msi_locus_section("test_data/clc_msi_report.xlsx")
+  locus_section <- read_msi_locus_section("test_data/clc_msi_report_14_loci.xlsx")
 
   locus_section_mutate <- mutate_msi_row_numbers(locus_section)
 

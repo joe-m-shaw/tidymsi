@@ -1,6 +1,6 @@
 test_that("mutate_msi_row_numbers gives correct dimension output", {
 
-  df_section <- read_msi_locus_section("test_data/clc_msi_report.xlsx")
+  df_section <- read_msi_locus_section("test_data/clc_msi_report_14_loci.xlsx")
 
   df_row_numbers <- mutate_msi_row_numbers(df_section)
 
