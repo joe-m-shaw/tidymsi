@@ -16,7 +16,7 @@
 mutate_msi_row_numbers <- function(df,
                                        regex_table = "Percentage: Baseline",
                                        regex_locus = ".*\\(\\w{1,2}\\)\\d{1,3}",
-                                       regex_stability = "Stability") {
+                                       regex_stability = "Stability|No matching reads at this locus") {
 
   if(!all(colnames(df) == c("x1", "x2", "x3"))){
     stop("Input has non-default column names")

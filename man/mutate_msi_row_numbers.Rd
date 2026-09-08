@@ -8,7 +8,7 @@ mutate_msi_row_numbers(
   df,
   regex_table = "Percentage: Baseline",
   regex_locus = ".*\\\\(\\\\w{1,2}\\\\)\\\\d{1,3}",
-  regex_stability = "Stability"
+  regex_stability = "Stability|No matching reads at this locus"
 )
 }
 \arguments{
