@@ -1,6 +1,7 @@
 # tidymsi
 
-tidymsi is a package to make working with CLC MSI outputs easier.
+`tidymsi` is a package which helps to convert microsatellite instability
+(MSI) results into a tidy format for data analysis.
 
 ## Installation
 
