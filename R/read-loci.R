@@ -48,8 +48,7 @@ read_loci <- function(filepath) {
 
   df_locus_tables <- read_msi_locus_section(filepath) |>
     mutate_msi_row_numbers() |>
-    join_msi_locus_tables() |>
-    dplyr::mutate(filepath = filepath)
+    join_msi_locus_tables()
 
   return(df_locus_tables)
 
